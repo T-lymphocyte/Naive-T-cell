@@ -10,39 +10,73 @@ class plane(Cog_Extension):
     @commands.command()
     async def info_boeing(self, ctx, string):
         if string == '747':
-            await ctx.send(jdata['747'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['747'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '747400':
-            await ctx.send(jdata['747400'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['747400'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '747800':
-            await ctx.send(jdata['747800'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['747800'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '747dreamlifter':
-            await ctx.send(jdata['747dreaml'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['747dreaml'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '737':
-            await ctx.send(jdata['7377'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['7377'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '737max':
-            await ctx.send(jdata['737max'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['737max'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '757':
-            await ctx.send(jdata['7572300'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['7572300'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '767':
-            await ctx.send(jdata['767400ER'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['767400ER'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777300ER':
-            await ctx.send(jdata['777300Er'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777300Er'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777X(ex)':
-            await ctx.send(jdata['777xE'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777xE'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777X(fo)':
-            await ctx.send(jdata['777xF'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777xF'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '787':
-            await ctx.send(jdata['787'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['787'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777200':
-            await ctx.send(jdata['777200ErLrF'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777200ErLrF'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777200ER':
-            await ctx.send(jdata['777200ErLrF'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777200ErLrF'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777200LR':
-            await ctx.send(jdata['777200ErLrF'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777200ErLrF'], inline=False)
+            await ctx.send(embed=embed)
         elif string == '777F':
-            await ctx.send(jdata['777200ErLrF'])
+            embed=discord.Embed()
+            embed.add_field(name=string, value=jdata['777200ErLrF'], inline=False)
+            await ctx.send(embed=embed)
         else:
-            await ctx.send('invalid module')
+            embed=discord.Embed()
+            embed.add_field(name="invalid model", value="", inline=False)
+            await self.bot.say(embed=embed)
 
     @commands.command()
     async def info_airbus(self, ctx, string):

@@ -16,7 +16,7 @@ class event(Cog_Extension):
         await channel.send(f'{member} left!')
     @commands.Cog.listener()
     async def on_message(self, msg):
-        if msg.content == 'hello':
-            await msg.channel.send('hi')
+        if msg.content == 'bruh' and msg.author != self.bot.user:
+            await msg.channel.send('bruh')
 def setup(bot):
     bot.add_cog(event(bot))
