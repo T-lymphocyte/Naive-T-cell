@@ -12,8 +12,9 @@ class help(Cog_Extension):
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/626406858462068736/715141085965320222/sot8wsK.gif")
         embed.set_author(name=f"seems {ctx.message.author} summoned a help monster.... GRRRR")
         embed.add_field(name="plane info", value="for info of plane commands, type k.plane_help", inline=False)
-        embed.add_field(name="Scary waifu", value="think before using. k.waifu ", inline=False)
-        embed.add_field(name="Ping", value="just a normal ping command. k.ping", inline=True)
+        embed.add_field(name="Ping", value="just a normal ping command. k.ping", inline=False)
+        embed.add_field(name="Polling", value='k.poll "title" "info" "time"', inline=False)
+        embed.add_field(name='event maker', value='k.event_maker "title" "info" "time" (use quotation mark outside the title, info and time)', inline=True)
         embed.set_footer(text="owo is op")
         await ctx.send(embed=embed)
     @commands.command()
@@ -26,5 +27,6 @@ class help(Cog_Extension):
         embed.add_field(name="list of valid plane-Airbus", value="318,319,320,321,330,340200,340300,340500,340600,350", inline=False)
         embed.set_footer(text="owo is op")
         await ctx.send(embed=embed)
+      
 def setup(bot):
     bot.add_cog(help(bot))
